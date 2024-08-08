@@ -25,10 +25,9 @@ The Searches folder contains the following files:
 1. [Introduction](#introduction)
 2. [Installation Requirements](#installation-requirements)
 3. [Project Structure](#project-structure)
-4. [Data](#data)
-5. [Training and Evaluation](#training-and-visualization)
-6. [Lessons](#lessons)
-7. [Screenshots](#screenshots)
+4. [Training and Evaluation](#training-and-visualization)
+5. [Lessons](#lessons)
+6. [Screenshots](#screenshots)
    
 ## Introduction
 
@@ -78,7 +77,7 @@ import matplotlib.pyplot as plt
 ```bash
  import queue
 ```
-
+<strong> Make sure to run the first command in the code block, i.e run all other commands in your terminal whereas the first command should be run in the Jupyter Notebook code block. </strong> <br>
 Useful Links for installing Jupyter Notebook:
 - https://youtube.com/watch?v=K0B2P1Zpdqs  (MacOS)
 - https://www.youtube.com/watch?v=9V7AoX0TvSM (Windows)
@@ -99,48 +98,31 @@ It's recommended to run this notebook in a conda environment to avoid dependency
 
 The notebook is organized into the following sections:
 <ul>
-<li> Introduction: Overview of the project and logistic regression.  </li> <br> 
-   
-<li> Task 1A: Multinomial Logistic Regression <br>
-&emsp; 1) Data Loading and Preprocessing: Steps to load and preprocess the dataset. <br>
-&emsp; 2) Model Training: Training the logistic regression model. <br>
-&emsp; 3) Model Evaluation: Evaluating the model performance. </li> <br> 
-
-
-<li> Task 1B: Reflection Questions related to the logistic regression task </li> <br> 
-<li>
-Task 2: Ridge Regression <br>
-&emsp; 1) Data Loading and Preprocessing: Steps to load and preprocess the dataset. <br>
-&emsp; 2) Model Training: Training the ridge regression model. <br>
-&emsp; 3) Model Evaluation: Evaluating the model performance using plots and some reflection questions </li> <br>
-
-</ul>
-
-## Data
-
-The dataset for the first task is provided in a csv file titled `star_classification.csv`. It consists of 100,000 observations of space taken by the SDSS (Sloan Digital Sky Survey). Every observation is described by 17 feature columns and 1 class column which identifies it to be either a star, galaxy or quasar.  <br> 
-
- Dataset Summary:
-- **Feature Type:** Varies
-- **Instances:** 100,000
-- **Input Features:** 17 
-- **Output:** Class
-<br>
-The dataset for the second part is provided in a csv file titled `auto_mpg.csv`. <br>
- Dataset Summary:
-<ul>
-<li> Feature Type: Varies </li>
-<li> Instances: 398 </li>
-<li> Input Feature: mpg </li>
-<li> Output: displacement </li>
+<li> Problem Description: describes the purpose of the assignment </li> <br> 
+<li> Details about the osmnx and folium python libraries and how they are to be used in the assignment.  </li> <br> 
+<li> Three functions that were already provided in the Jupyter Notebook: 
+   <ol>
+      <li> Road Network Data Retrieval Function (get_road_network) </li>
+      <li> Road Network Visualization Function (visualize_road_network) </li>
+      <li> Shortest Path Visualization Function (visualize_path_folium) </li>
+   </ol> 
+</li> <br> 
+<li> Mathematical details of the Eulidean, Manhattan and Haversine distances, that are used in the implementation of heuristic functions </li> <br> 
+<li> Task 0: Implementing Heuristics --- implements functions to calculate the three heuristics </li> <br> 
+<li> Task 1: A* Algorithm Implementation --- implements the A* algorithm to find the shortest path between a source node and a target node. </li> <br> 
+<li> Task 2: Best-First Search Algorithm Implementation --- implements the Best-First Search algorithm to find a path between a source node and a target node.</li> <br> 
+<li> Task 3: Informed Breadth-First Search Algorithm Implementation --- implements the Breadth-First Search algorithm using heuristics to find a path between a source node and a target node.</li> <br> 
+<li> Visual representation of the maps showing the various paths identified by the algorithms </li> <br> 
+<li> Implementation of the A* Algorithm using the built-in function of the NetworkX library, along with its visual map representation </li> <br> 
+<li> Task 4: Single Source And Multiple Destinations using A star --- implements the A* Algorithm such that it can identify the optimal paths for MULTIPLE destinations, along with its visual map representation. </li> <br> 
+<li> Brief comparative analysis of the different algorithms used in the assignment to implement the searches. </li> <br> 
 </ul>
 
 
 ## Training and Visualization
 
 The entire training process alongside the maths involved is explained in detail in the jupyter notebook. 
-- Note: You need to be proficient in Calculus to fully understand the gradient descent algorithm, especially the concept of partial derivatives. Additionally, a good knowledge of Linear Algebra is required to understand the various matrix and vector operations that are performed in the assignment.
-
+- Note: You need to be proficient in Python Programming to fully implement the complex algorithms shown in this assignment.
 
 ## Lessons
 
@@ -164,8 +146,7 @@ A logistic regression project can teach a variety of valuable skills and concept
 <h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
 <img src="pic1.png" width="450px"> <br> 
 
-<h4> 2. This image shows the output of the regression model with the least validation Root-Mean-Square-Error overlaid on top of the original mpg vs displacement data. </h4>
-<img src="pic2.png" width="450px"> <br> 
+
 
 
 
