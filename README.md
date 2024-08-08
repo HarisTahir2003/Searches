@@ -136,7 +136,8 @@ The entire training process alongside the maths involved is explained in detail 
 
 ## Screenshots
 <h4> This image is an example of several used in this assignment. This one in specific shows a map representation of the modified A* algorithm used to go to multiple destinations in the most optimal way. <br> 
-The diagram shows a map of the Lahore University of Management Sciences. The light blue lines show all the possible ways to walk around LUMS whereas the dark blue lines show the result of the modified A* algorithm from the source (shown in green) to three different destinations (shown in red).</h4>
+The diagram shows a map of the Lahore University of Management Sciences. The light blue lines show all the possible ways to walk around LUMS whereas the dark blue lines show the result of the modified A* algorithm from the source (shown in green) to three different destinations (shown in red). <br>
+You can change the last code block to change the source or destinations. You can find the node values of the different buildings in LUMS by inspecting the first map in the assignment under the heading <strong>Road Network</strong>.</h4>
 <img src="pic1.png" width="450px"> <br> 
 
 
