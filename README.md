@@ -26,14 +26,14 @@ The Searches folder contains the following files:
 2. [Installation Requirements](#installation-requirements)
 3. [Project Structure](#project-structure)
 4. [Training and Evaluation](#training-and-visualization)
-5. [Lessons](#lessons)
+5. [Challenges](#challenges)
 6. [Screenshots](#screenshots)
    
 ## Introduction
 
-Logistic regression is a Machine Learning technique used for binary or multi-class classification that models the relationship between a dependent binary/multi-class variable and one or more independent variables. Unlike linear regression, which predicts continuous outcomes, logistic regression predicts the probability of an outcome.
+Search algorithms are fundamental techniques in AI for navigating and finding solutions in large problem spaces. They systematically explore paths or possibilities to identify optimal solutions, such as the shortest route or best outcome. These algorithms, including A*, Best-first search, and Breadth-first search, play a crucial role in applications ranging from route planning to decision-making systems.
 
- This assignment provides a clear and concise example of how to implement multi-class logistic regression from scratch using Python.
+ This assignment provides a clear and concise example of how to implement these search algorithms from scratch using Python.
  
 ## Installation Requirements
 
@@ -124,32 +124,20 @@ The notebook is organized into the following sections:
 The entire training process alongside the maths involved is explained in detail in the jupyter notebook. 
 - Note: You need to be proficient in Python Programming to fully implement the complex algorithms shown in this assignment.
 
-## Lessons
+## Challenges
 
-A logistic regression project can teach a variety of valuable skills and concepts, including:
+1. **Performance Optimization**: Implementing search algorithms can be computationally intensive, especially for large datasets or complex graphs. To address this, optimizing the algorithms for efficiency, using heuristics to prune the search space, and leveraging data structures like priority queues can significantly improve performance.
 
-- Data Preprocessing: How to clean and prepare data for analysis, including handling missing values, scaling features, and encoding categorical variables.
+2. **Memory Usage**: Search algorithms often require substantial memory to store nodes and paths, which can be challenging for large-scale problems.
 
-- Feature Selection: Identifying which features (variables) are most important for making predictions and how to choose them effectively.
+3. **Heuristic Design**: For algorithms like A* and Best-first search, designing effective heuristics is critical for performance. Testing various heuristics and using domain-specific knowledge to refine them can enhance the algorithm’s accuracy and efficiency.
 
-- Model Building: Understanding how to build a logistic regression model, including splitting data into training and testing sets, fitting the model, and predicting outcomes.
-
-- Performance Evaluation: Using metrics like Root Mean Squared Error (RMSE) to evaluate the performance of your model and understand its accuracy.
-
-- Interpreting Results: Understanding the results of the logistic regression model and what they signify.
-
-- Algorithm Implementation: Learning about the underlying algorithm used in linear regression and how it optimizes the line of best fit.
-
+5. **Complexity of Implementation**: Implementing and integrating search algorithms can be complex, especially when dealing with variations or combining multiple algorithms. Careful planning, modular design, and thorough testing can help manage this complexity and ensure robust functionality.
 
 ## Screenshots
-<h3> Ridge Regression </h3>
-<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<h4> This image is an example of several used in this assignment. This one in specific shows a map representation of the modified A* algorithm used to go to multiple destinations in the most optimal way. <br> 
+The diagram shows a map of the Lahore University of Management Sciences. The light blue lines show all the possible ways to walk around LUMS whereas the dark blue lines show the result of the modified A* algorithm from the source (shown in green) to three different destinations (shown in red).</h4>
 <img src="pic1.png" width="450px"> <br> 
-
-
-
-
-
 
 
 ## License
